@@ -18,7 +18,6 @@ def make_palindrome(number_string, k):
                 # 54325
         if counter > k:
             return -1
-            break
         pointer_1 += 1
         pointer_2 -= 1
 
