@@ -22,8 +22,13 @@ def make_palindrome(number_string, k):
         pointer_2 -= 1
 
     # maximizing (adding 9's)
-    #number_to_maximize = k - counter
-
+    # number_to_maximize = k - counter
+    # if number_to_maximize > 1:
+    #     pointer_1 = 0
+    #     pointer_2 = len(number_string) - 1
+    #     if numbers[pointer_1] != 9:
+    #         numbers[pointer_1] = 9
+    #         numbers[pointer_2] = 9
 
     # joining & printing the palindrome
     return ''.join(numbers)
