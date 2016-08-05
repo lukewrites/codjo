@@ -52,13 +52,11 @@ class PalindromeTests(unittest.TestCase):
 
         self.assertEqual(actual, -1)
 
-
     @unittest.skip('Extra Credit: Maximizes the numeric output.')
     def test_maximizes_output_one(self):
         actual = make_palindrome('092282', 3)
 
         self.assertEqual(actual, '992299')
-
 
     @unittest.skip('Extra Credit: Maximizes the numeric output.')
     def test_maximizes_output_two(self):
