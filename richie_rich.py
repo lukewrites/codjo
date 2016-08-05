@@ -8,14 +8,8 @@ def make_palindrome(number_string, k):
     for i in range(len(number_string)):
         if numbers[pointer_1] != numbers[pointer_2]:
             counter += 1
-            if numbers[pointer_2] > numbers[pointer_1]:
-                # 12345
-                numbers[pointer_1] = numbers[pointer_2]
-                # 52345
-            else:
-                # 54321
-                numbers[pointer_2] = numbers[pointer_1]
-                # 54325
+            new_val = max(numbers[pointer_1], numbers[pointer_2])
+            numbers[pointer_1], numbers[pointer_2] = new_val, new_val
         if counter > k:
             return -1
         pointer_1 += 1
